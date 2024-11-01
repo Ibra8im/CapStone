@@ -41,7 +41,7 @@ const BookingForm = (props) => {
                 onChange={(e) => setTimes(e.target.value)}
               >
                 <option value="">Select a Time </option>
-                {props.avilableTimes.avilableTimes.map((avilableTimes) => {
+                {props.avilableTimes.avilableTimes.map(avilableTimes => {
                   return <option key={avilableTimes}>{avilableTimes}</option>;
                 })}
               </select>
