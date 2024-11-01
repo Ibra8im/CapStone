@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const BookingForm = () => {
+const BookingForm = (props) => {
   const [date, setDate] = useState("");
   const [times, setTimes] = useState("");
   const [guset, setGuest] = useState("");
@@ -38,7 +38,7 @@ const BookingForm = () => {
               <select
                 id="book-time"
                 value={times}
-                onChange={(e) => handelChange(e.target.value)}
+                onChange={(e) => setTimes(e.target.value)}
               >
                 <option value="">Select a Time </option>
                 {props.avilableTimes.avilableTimes.map((avilableTimes) => {
@@ -76,7 +76,7 @@ const BookingForm = () => {
             <div className="btnReceive">
               <input aria-label="on Click" type="submit" value={'Make Your Reservation'} />
             </div>
-            
+
           </fieldset>
         </form>
       </section>

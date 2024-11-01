@@ -1,14 +1,14 @@
 import "./App.css";
+import Main from "./component/Main";
+import Menu from "./component/Menu";
 import Nav from "./component/Nav";
-import Header from "./component/Header";
-import BookingForm from "./component/BookingForm";
 
 function App() {
   return (
     <>
       <Nav />
-      <Header />
-      <BookingForm />
+      <Main />
+      <Menu />
     </>
   );
 }
